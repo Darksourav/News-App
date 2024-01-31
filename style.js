@@ -15,6 +15,7 @@ async function fetchNews(query) {
           // Add any other required headers
       },
       });
+      console.log("Fetching data from:", res);
       if (!res.ok) {
           throw new Error(`Failed to fetch news. Status: ${res.status}`);
       }
